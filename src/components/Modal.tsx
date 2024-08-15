@@ -106,9 +106,11 @@ export default function Modal() {
 
                       onClick={()=> {
                         handleClickFavorite(selectedRecipe)
+                        closeModal()
                       }}
                     >
                       {favoriteExists(selectedRecipe.idDrink) ? 'Delete Favorite' : 'Add to Favorites'}
+                      
                     </button>
                   </div>
                 </Dialog.Panel>
